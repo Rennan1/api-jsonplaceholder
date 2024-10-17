@@ -3,7 +3,7 @@ require('cypress-plugin-api');
 // PUT = Substitui o recurso inteiro. Se você enviar um PUT e não incluir alguns campos, eles podem ser 
 // removidos ou sobrescritos no servidor. 
 describe('PUT para editar totalmente um dado existente', () => {
-    it('PUT Data', () => {
+    it('PUT para editar um comentário pelo ID', () => {
         cy.api({
             method: 'PUT',
             url: 'comments/7',
